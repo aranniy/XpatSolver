@@ -1,0 +1,49 @@
+Rapport
+
+1. Identifiants
+
+Petrouchenko Lisa @petrouch 22004246
+Lingeswaran Aranniy @lingeswa 21954032
+
+2. Fonctionnalités
+
+Implémentation minimal (partie 1)
+Partie 2 non réalisé
+
+3. Compilation
+
+make → compile le projet
+./run «game.permut» → permet d’afficher la configuration initiale du jeu 
+dune test tests/I → permet de réaliser les tests du jalon 1
+
+4. Découpage modulaire
+
+L’ensemble de nos modifications ont été ajoutés dans des fichiers déjà existants. Les états (à savoir les colonnes, registres,dépots, règles...) sont créés et gérés (construction de colonnes, mise à jour des dépots, affichage de la partie etc.) dans XpatSolver. Le traitement du fichier solution est également effectué dans ce module.
+
+5. Organisation du travail
+
+Partie 1.1: la configuration initiale → réalisé par Aranniy
+Partie 1.2: valider un fichier solution → réalisé par Aranniy
+Partie 1.3: création de la permutation → réalisé par Lisa
+
+Pour ce projet, afin d'être le plus efficace possible, nous avons choisi de nous concentrer sur une partie chacune. Les parties 1.1 et 1.3 étant indépendantes, nous avons choisi de commencer par cela. Nous avons également planifié des réunions hebdomadaires pour communiquer sur notre avancée et les difficultés rencontrées. Nous prenions également du temps pour consulter le code de l’autre via le dépôt git afin de fournir de possibles conseils ou remarques. 
+Nous avons décidé que la dernière partie serait entamée dès lors qu’une personne finissait sa partie et serait fini à deux. 
+La première et deuxième partie ont prit un temps similaire à être implémentée. La troisième partie a connu des modifications jusqu’à la date de rendu, en raison de sa complexité. 
+
+Partie 2 : 
+
+Nous avons commencé à nous pencher sur la partie 2 à la suite des examens de janvier. Toutefois, le court délai avant le rendu (dû à notre manque d'organisation) ainsi que nos difficultés à manipuler le module Set ont fait que nous ne sommes pas parvenus à réaliser cette partie. 
+
+6. Remarques
+
+Pour la partie 1 : 
+
+Par manque de temps, nous n’avons pas implémenté de nouveaux modules mais cela est prévu pour la partie 2. Par exemple, on souhaite créer un module Etat pouvant représenter les états d’une partie ainsi que leur gestion. 
+
+Nous avons pris du temps à démarrer l'implémentation demandée car nous avions du mal à comprendre le sujet. Nous le trouvions assez long et ne comprenions pas par quoi et sur quoi il fallait commencer. C'est seulement grâce à l'intervention de notre chargé de TD qui a pris du temps pour nous expliquer ce qui était attendu, que nous avons enfin pu commencer ce projet.
+
+Nous avons également effectué de nombreux petits commits qui pourraient être qualifiés d’inutile (par exemple, des petites corrections d’une ligne). Toutefois, nous avons fait cela pour que l’autre personne du binôme ait accès à tout moment à un code fonctionnel et ne pas être gêné lors d’éventuels test. En effet, un des commits de Shuffle était incorrect et a entravé les test de la partie 2. De même, une modification dans la création des colonnes a rendu le projet non compilable et a dû être rapidement corrigée. Nous nous sommes rendus compte que nous faisions des commits un peu trop rapidement et avons prévu d’améliorer notre utilisation de git afin de permettre de plus facilement retrouver la date du travail effectué et son contenu pour ne pas avoir à chercher à plusieurs endroits différents une certaine modification.
+
+Pour la partie 2 : 
+
+Des tentatives de codes ont été réalisé sans succès, nous avons donc décidé de ne pas les commit. Si on devait donner des raisons à notre échec, on pourrait évoquer la difficulté d'être efficace lorsque la deadline est proche. Il aurait fallu que nous prenions du temps pendant les vacances de Noël pour discuter du projet et de son implémentation. De même, nous n'étions pas à l'aise avec le module Set d'Ocaml. Il aurait fallu qu'on se documente plus sur cela ou qu'on demande de l'aide à notre chargé de TP. 
